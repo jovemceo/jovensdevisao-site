@@ -1,128 +1,158 @@
+
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jovens de Visão</title>
-  <meta name="description" content="Desperta o empreendedor que há em ti com dicas de marketing digital, negócios e estratégias para o futuro.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f5f6fa;
-      color: #222;
+      background: #f4f4f4;
+      color: #111;
     }
     header {
-      background: #111;
+      background: linear-gradient(120deg, #111, #222);
       color: white;
-      padding: 2rem;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
     header p {
-      margin: 0.5rem 0 0;
       font-size: 1.2rem;
+      margin-bottom: 30px;
     }
-    nav {
-      background: #222;
-      padding: 0.8rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
+    .cta-button {
+      background: #00df81;
+      color: #111;
+      padding: 14px 24px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+    .cta-button:hover {
+      background: #00b86b;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
+    section {
+      padding: 40px 20px;
+      max-width: 960px;
       margin: auto;
-      padding: 2rem;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #00df81;
+    }
+    .content-block {
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .blog-preview {
-      margin-bottom: 2rem;
-    }
-    .blog-preview h3 a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    .blog-preview h3 a:hover {
-      text-decoration: underline;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
-      text-align: center;
       background: #111;
-      color: white;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
+      color: #999;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+    .email-form {
+      margin-top: 20px;
+    }
+    input[type=email] {
+      padding: 10px;
+      width: 60%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    @media (max-width: 600px) {
+      input[type=email] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    #whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+    }
+    #whatsapp-button img {
+      width: 100%;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>JOVENS DE VISÃO</h1>
+    <p>Marketing Digital | Empreendedorismo | Futuro</p>
+    <button class="cta-button">📩 Baixar Guia Grátis</button>
+  </header>
 
-<header>
-  <h1>Jovens de Visão</h1>
-  <p>Empreendedorismo Jovem, Marketing Digital e Futuro</p>
-</header>
-
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#blog">Conteúdo</a>
-  <a href="#contato">Contato</a>
-  <a href="#privacidade">Privacidade</a>
-</nav>
-
-<div class="container">
-  <section id="sobre">
-    <h2>Sobre</h2>
-    <p>Somos uma comunidade de jovens com visão empreendedora. Acreditamos que o futuro está no digital, e queremos ajudar você a crescer com marketing, criatividade e estratégias que funcionam.</p>
-  </section>
-
-  <section id="blog">
-    <h2>Últimos Conteúdos</h2>
-
-    <div class="blog-preview">
-      <h3><a href="artigo1.html">Como Criar uma Marca Digital do Zero</a></h3>
-      <p>Criar uma marca digital começa com uma ideia clara: quem você é e para quem você fala. Escolha um nome forte, simples e com propósito. Use redes sociais para mostrar sua identidade, crie um logo (pode ser com IA ou Canva) e poste conteúdos que conectam com seu público.</p>
+  <section>
+    <h2>🔥 Últimos Conteúdos</h2>
+    <div class="content-block">
+      <h3>Como Criar uma Marca Digital que Realmente Conecta</h3>
+      <p>Dê vida à sua ideia com identidade forte, nome de impacto e uma presença que atrai e retém público.</p>
     </div>
-
-    <div class="blog-preview">
-      <h3><a href="artigo2.html">5 Maneiras de Atrair Tráfego para Seu Site Sem Gastar Dinheiro</a></h3>
-      <p>Descubra como usar redes sociais, SEO, colaborações e muito mais para trazer visitantes para seu site sem precisar investir dinheiro.</p>
+    <div class="content-block">
+      <h3>5 Estratégias GRÁTIS pra Bombar Seu Site Sem Gastar 1 Real</h3>
+      <p>Redes sociais, SEO, colab, IA e mais — veja o que está funcionando de verdade.</p>
+    </div>
+    <div class="content-block">
+      <h3>Checklist: Tá Pronto pra Monetizar Sua Ideia?</h3>
+      <p>Uma lista prática pra validar sua ideia antes de investir seu tempo ou grana.</p>
     </div>
   </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Para colaborações ou dúvidas, envie um e-mail para: <strong>jovensdevisao@gmail.com</strong></p>
+  <section>
+    <h2>📩 Receba Conteúdo VIP</h2>
+    <p>Ganhe dicas exclusivas, atualizações semanais e bônus gratuitos direto no seu e-mail.</p>
+    <form class="email-form">
+      <input type="email" placeholder="Seu e-mail aqui" required>
+      <button class="cta-button">Quero Receber</button>
+    </form>
   </section>
 
-  <section id="privacidade">
-    <h2>Política de Privacidade</h2>
-    <p>Este site respeita sua privacidade. Não coletamos dados pessoais diretamente. Utilizamos apenas ferramentas básicas de análise de tráfego para entender melhor nosso público.</p>
+  <section>
+    <h2>💼 Ferramentas Recomendadas</h2>
+    <div class="content-block">
+      <p><strong>Canva</strong> – design sem complicação<br>
+         <strong>Notion</strong> – organize tudo em um só lugar<br>
+         <strong>Hostinger</strong> – site rápido e barato<br>
+         <strong>ChatGPT</strong> – IA que acelera seu processo criativo</p>
+    </div>
   </section>
-</div>
 
-<footer>
-  <p>&copy; 2025 Jovens de Visão. Todos os direitos reservados.</p>
-</footer>
+  <section>
+    <h2>💬 Quem Somos</h2>
+    <div class="content-block">
+      <p>Somos uma comunidade de jovens com visão empreendedora. Acreditamos que o futuro é digital e que todo mundo pode crescer com estratégia e criatividade.</p>
+    </div>
+  </section>
 
+  <footer>
+    <p>📧 jovensdevisao@gmail.com<br>
+       Instagram: @jovensdevisao · YouTube: /jovensdevisao</p>
+    <p>Política de Privacidade | © 2025 Jovens de Visão. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/244944064558" target="_blank" id="whatsapp-button">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
 
